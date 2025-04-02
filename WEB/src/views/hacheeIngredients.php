@@ -38,5 +38,4 @@
             <p><em>Note: This recipe serves approximately 6 portions.</em></p>
         </div>
     </div>
-</body>
-</html>
+<?php require_once 'parts/footer.php';?>

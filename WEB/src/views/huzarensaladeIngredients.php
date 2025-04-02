@@ -38,7 +38,7 @@
             </div>
 
             <div class="ingredients-image">
-                <img src="../../public/img/huzarensalade.webp" alt="Dutch Huzarensalade" class="ingredients-detail-img">
+                <img src="../../public/img/huzarenSalade3.jpg" alt="Dutch Huzarensalade" class="ingredients-detail-img">
             </div>
         </div>
 
@@ -46,5 +46,5 @@
             <p><em>Note: This recipe serves approximately 8-10 portions.</em></p>
         </div>
     </div>
+    <?php require_once 'parts/footer.php'?>
 </body>
-</html>
