@@ -11,7 +11,7 @@
         <div class="stroopwafel-content">
             <h2>The Famous Stroopwafel</h2>
             <p class="fun-fact">Fun fact: Stroopwafels were originally made from bakery leftovers in the 18th century in Gouda. The syrup filling was a clever way to use bread crumbs!</p>
-            <img src="stroopwafel.jpeg" alt="Stroopwafel" class="stroopwafel-img">
+            <img src="../../public/img/stroopwafel.jpeg" alt="Stroopwafel" class="stroopwafel-img">
             <a href="stroopwafel.php" class="btn-stroopwafel">Learn How to Make It</a>
         </div>
     </section>
@@ -21,7 +21,7 @@
         <h2 class="section-title">Other Dutch Delicacies</h2>
         <div class="food-grid">
             <div class="food-card">
-                <img src="huzarensalade.jpg" alt="Huzarensalade" class="food-img">
+                <img src="../../public/img/huzarensalade.jpg" alt="Huzarensalade" class="food-img">
                 <div class="food-info">
                     <h3>Huzarensalade</h3>
                     <p>A traditional Dutch salad with potatoes, vegetables, and meat.</p>
@@ -39,7 +39,7 @@
             </div>
 
             <div class="food-card">
-                <img src="hachee.jpg" alt="Hachee" class="food-img">
+                <img src="../../public/img/hachee.jpg" alt="Hachee" class="food-img">
                 <div class="food-info">
                     <h3>Hachee</h3>
                     <p>A traditional Dutch stew made with beef, onions, and spices.</p>
@@ -52,7 +52,7 @@
     <section class="food-section">
         <h2 class="section-title">Dutch Food Culture</h2>
         <div class="food-card">
-            <img src="dutchFood.jpg" alt="Dutch Food Culture" class="food-img">
+            <img src="../../public/img/dutchFood.jpg" alt="Dutch Food Culture" class="food-img">
             <div class="food-info">
                 <h3>Traditional Dutch Cuisine</h3>
                 <p>Dutch cuisine is simple and straightforward, with many dishes based on meat, potatoes and vegetables.</p>

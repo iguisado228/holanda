@@ -643,7 +643,6 @@ body {
 .dropdown-content {
     display: none;
     padding-left: 20px;
-    background-color: rgba(0,0,0,0.1);
 }
 .dropdown.active .dropdown-content {
     display: block;

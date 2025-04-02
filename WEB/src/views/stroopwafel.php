@@ -1,4 +1,4 @@
-<?php require_once 'header.php'; ?>
+<?php require_once 'parts/header.php'; ?>
 
 <div class="container">
     <section class="recipe-header">
@@ -10,7 +10,7 @@
             <span>Servings: 8 waffles</span>
         </div>
         
-        <img src="stroopwafel-recipe.jpg" alt="Authentic Dutch Stroopwafel" class="recipe-img">
+        <img src="../../public/img/stroopwafel2.jpg" alt="Authentic Dutch Stroopwafel" class="recipe-img">
         
         <div class="recipe-content">
             <div class="ingredients-section">
@@ -42,4 +42,4 @@
     </section>
 </div>
 
-<?php require_once 'footer.php'; ?>
+<?php require_once 'parts/footer.php'; ?>

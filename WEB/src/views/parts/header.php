@@ -12,7 +12,7 @@
 <body>
     <nav class="navbar">
         <div class="container navbar-container">
-            <a href="index.php" class="navbar-brand">Dutch Cuisine</a>
+            <a href="../views/index.php" class="navbar-brand">Dutch Cuisine</a>
             <div class="menu-toggle">
                 <span></span>
                 <span></span>
@@ -34,6 +34,6 @@
             </div>
         </div>
     </nav>
-    <script src="script.js"></script>
+    <script src="../scripts/script.js"></script>
 </body>
 </html>
