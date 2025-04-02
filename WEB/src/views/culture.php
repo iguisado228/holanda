@@ -1,5 +1,4 @@
 <?php require_once 'parts/header.php'; ?>
-el cs
 <div class="culture-container">
     <section class="culture-main">
         <h1 class="culture-title">Dutch Food Culture</h1>
