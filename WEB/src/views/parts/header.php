@@ -21,7 +21,7 @@
             <div class="nav-menu">
                 <a href="../views/index.php">Home</a>
                 <div class="dropdown">
-                    <a href="recipes.php">Recipes ▼</a>
+                    <a>Recipes ▼</a>
                     <div class="dropdown-content">
                         <a href="stroopwafel.php">Stroopwafel</a>
                         <a href="huzarensalade.php">Huzarensalade</a>
@@ -30,7 +30,7 @@
                     </div>
                 </div>
                 <div class="dropdown">
-                    <a href="../views/ingredients.php">Ingredients ▼</a>
+                    <a>Ingredients ▼</a>
                     <div class="dropdown-content">
                         <a href="stroopwafelIngredients.php">Stroopwafel</a>
                         <a href="huzarensaladeIngredients.php">Huzarensalade</a>
