@@ -1,0 +1,661 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navbar - Estilo moderno */
+.navbar {
+    background-color: #FF5733;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    position: relative; /* Añade esto para el menú móvil */
+}
+
+/* Menú hamburguesa para móvil */
+/* Mobile Menu Styles */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.menu-toggle .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px auto;
+    transition: all 0.3s ease;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 4px;
+    list-style: none;
+    padding: 0;
+}
+
+.dropdown-menu li a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #f1f1f1;
+}
+
+.nav-item:hover .dropdown-menu {
+    display: block;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    
+    .menu-toggle.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    .menu-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .menu-toggle.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #FF5733;
+        padding: 10px 0;
+    }
+    
+    .nav-menu.active {
+        display: flex;
+    }
+    
+    .nav-item {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .dropdown-menu {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+        display: none;
+    }
+    
+    .nav-item:hover .dropdown-menu {
+        display: none;
+    }
+    
+    .nav-item.active .dropdown-menu {
+        display: block;
+    }
+}
+.navbar-brand {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center; /* Añadido para alineación vertical */
+    height: 100%;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 30px;
+    align-items: center; /* Añadido para alineación vertical */
+    height: 100%;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 8px 12px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center; /* Añadido para alineación vertical */
+    height: 100%;
+}
+
+/* Dropdown Styles */
+.dropdown {
+    position: relative;
+    display: inline-flex; /* Cambiado de inline-block a inline-flex */
+    align-items: center; /* Añadido para alineación vertical */
+    height: 100%;
+}
+
+.dropdown > a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-menu a:hover {
+    background-color: rgba(255,255,255,0.2);
+}
+
+/* Dropdown Styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 4px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.arrow {
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-left: 5px;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .nav-menu {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    
+    .dropdown {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .dropdown-content {
+        position: static;
+        width: 100%;
+    }
+}
+
+/* Hero Section */
+.hero {
+    padding: 60px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #2C3E50;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    color: #555;
+}
+
+/* Food Grid - Platos típicos */
+.food-section {
+    padding: 50px 0;
+}
+
+.section-title {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #2C3E50;
+}
+
+.food-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.food-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.food-card:hover {
+    transform: translateY(-10px);
+}
+
+.food-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.food-info {
+    padding: 20px;
+}
+
+.food-info h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #2C3E50;
+}
+
+.food-info p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Recipe Page Styles */
+.recipe-header {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.recipe-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #2C3E50;
+}
+
+.recipe-meta {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.recipe-meta span {
+    font-size: 14px;
+    color: #666;
+}
+
+.recipe-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.highlight-section {
+    margin: 40px 0;
+    background-color: #FFF8F0;
+    padding: 30px;
+    border-radius: 8px;
+    border-left: 5px solid #FFA500;
+}
+
+.highlight-card {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    box-shadow: none;
+    background: transparent;
+}
+
+.highlight-card .food-img {
+    flex: 1;
+    max-width: 400px;
+    height: 300px;
+}
+
+.highlight-card .food-info {
+    flex: 1;
+}
+
+@media (max-width: 768px) {
+    .highlight-card {
+        flex-direction: column;
+    }
+    
+    .highlight-card .food-img {
+        max-width: 100%;
+    }
+}
+
+.section-subtitle {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #2C3E50;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .nav-menu {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    
+    .hero h1 {
+        font-size: 32px;
+    }
+    
+    .section-title {
+        font-size: 28px;
+    }
+    
+    .recipe-title {
+        font-size: 28px;
+    }
+    
+    .recipe-img {
+        height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 40px 0;
+    }
+    
+    .hero h1 {
+        font-size: 26px;
+    }
+    
+    .section-title {
+        font-size: 24px;
+    }
+    
+    .food-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .recipe-header {
+        padding: 20px;
+    }
+    
+    .recipe-meta {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Sección destacada Stroopwafel */
+.featured-stroopwafel {
+    margin: 60px 0;
+    padding: 40px;
+    background: linear-gradient(to right, #FFF3E0, #FFECB3);
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(255,152,0,0.2);
+}
+
+.stroopwafel-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.featured-stroopwafel h2 {
+    font-size: 36px;
+    color: #E65100;
+    margin-bottom: 20px;
+}
+
+.fun-fact {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #5D4037;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.7);
+    border-radius: 8px;
+    border-left: 4px solid #FFA000;
+}
+
+.stroopwafel-img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 12px;
+    border: 5px solid white;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    margin: 20px auto; /* Cambiado a auto para centrar */
+    display: block; /* Necesario para que funcione margin auto */
+}
+
+.btn-stroopwafel {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #FF6D00;
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+.btn-stroopwafel:hover {
+    background-color: #E65100;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(230,81,0,0.3);
+}
+
+/* Responsive para la sección stroopwafel */
+@media (max-width: 768px) {
+    .featured-stroopwafel {
+        padding: 30px 20px;
+        margin: 40px 0;
+    }
+    
+    .featured-stroopwafel h2 {
+        font-size: 28px;
+    }
+    
+    .fun-fact {
+        font-size: 16px;
+        padding: 15px;
+    }
+    
+    .stroopwafel-img {
+        max-width: 100%;
+    }
+}
+/* Mobile Menu Toggle */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    order: 1; /* Mueve la hamburguesa a la derecha */
+    margin-left: auto; /* Alinea a la derecha */
+}
+
+.menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+/* Mobile Menu */
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+    
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        z-index: 1001;
+    }
+    
+    .menu-toggle span {
+        display: block;
+        width: 25px;
+        height: 2px;
+        background-color: white;
+        margin: 3px 0;
+        transition: all 0.3s ease;
+    }
+    
+    .nav-menu {
+        display: none;
+        position: fixed;
+        top: 70px;
+        right: 15px !important; /* Fuerza posición derecha */
+        left: auto !important; /* Anula cualquier posición izquierda */
+        width: 180px;
+        max-height: 80vh;
+        background-color: #FF5733;
+        padding: 8px;
+        border-radius: 6px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+        z-index: 1000;
+        overflow-y: auto;
+    }
+    
+    .nav-menu a {
+        display: block;
+        padding: 6px 8px;
+        margin: 2px 0;
+        font-size: 13px;
+        line-height: 1.2;
+        min-height: auto;
+        height: auto;
+    }
+    
+    .dropdown-content {
+        margin: 2px 0 0 8px;
+        padding: 0;
+    }
+    
+    .dropdown-content a {
+        padding: 4px 8px;
+        font-size: 12px;
+    }
+    
+    /* Elimina cualquier altura fija que pudiera estar afectando */
+    .navbar-brand, .nav-menu, .dropdown > a {
+        height: auto !important;
+    }
+}
+.nav-menu a {
+    display: block;
+    padding: 12px 20px;
+    text-align: left;
+}
+.dropdown-content {
+    display: none;
+    padding-left: 20px;
+    background-color: rgba(0,0,0,0.1);
+}
+.dropdown.active .dropdown-content {
+    display: block;
+}
+@media (max-width: 768px) {
+    body.menu-open::after {
+        content: '';
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 280px;
+        z-index: 999;
+    }
+}
