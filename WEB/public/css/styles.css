@@ -658,3 +658,152 @@ body {
         z-index: 999;
     }
 }
+
+/* Culture Page Styles */
+.culture-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 20px;
+}
+
+.culture-main {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.culture-title {
+    color: #e63946;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.culture-title:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: #457b9d;
+    border-radius: 2px;
+}
+
+.culture-tags {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.culture-tags span {
+    background: #457b9d;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.culture-hero-img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.culture-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.culture-subtitle {
+    color: #1d3557;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-left: 15px;
+}
+
+.culture-subtitle:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 70%;
+    width: 5px;
+    background: #e63946;
+    border-radius: 3px;
+}
+
+.culture-feature-list,
+.culture-tradition-list {
+    padding-left: 1rem;
+    line-height: 1.7;
+}
+
+.culture-feature-list li,
+.culture-tradition-list li {
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    position: relative;
+}
+
+.culture-feature-list li:before,
+.culture-tradition-list li:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.6em;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #457b9d;
+}
+
+.culture-feature-list li strong {
+    color: #1d3557;
+}
+
+.culture-tradition-list li strong {
+    color: #e63946;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    .culture-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .culture-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .culture-title {
+        font-size: 1.8rem;
+    }
+    
+    .culture-subtitle {
+        font-size: 1.3rem;
+    }
+    
+    .culture-tags span {
+        padding: 0.4rem 1.2rem;
+        font-size: 0.8rem;
+    }
+}
