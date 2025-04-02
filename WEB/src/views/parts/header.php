@@ -29,11 +29,20 @@
                         <a href="hachee.php">Hachee</a>
                     </div>
                 </div>
-                <a href="../views/ingredients.php">Ingredients</a>
+                <div class="dropdown">
+                    <a href="../views/ingredients.php">Ingredients ▼</a>
+                    <div class="dropdown-content">
+                        <a href="stroopwafelIngredients.php">Stroopwafel</a>
+                        <a href="huzarensaladeIngredients.php">Huzarensalade</a>
+                        <a href="stamppotIngredients.php">Stamppot</a>
+                        <a href="hacheeIngredients.php">Hachee</a>
+                    </div>
+                </div>
                 <a href="../views/culture.php">Culture</a>
             </div>
         </div>
     </nav>
     <script src="../scripts/script.js"></script>
 </body>
+
 </html>

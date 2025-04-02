@@ -807,3 +807,70 @@ body {
         font-size: 0.8rem;
     }
 }
+
+.ingredients-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.ingredients-list {
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.ingredients-list h2 {
+    color: #FF5733;
+    border-bottom: 2px solid #FF5733;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.ingredients-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.ingredients-list li {
+    padding: 0.8rem 0;
+    border-bottom: 1px solid #eee;
+    color: #2D4059;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.ingredients-list li:before {
+    content: "•";
+    color: #FF5733;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.ingredients-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.ingredients-detail-img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .ingredients-detail-img {
+        max-height: 400px;
+    }
+}
