@@ -9,7 +9,7 @@
             <span>Seasonal</span>
         </div>
         
-        <img src="../../public/img/dutchGastronomy.jpg" alt="Dutch Food Culture" class="culture-hero-img">
+        <img src="../../public/img/dutchGastronomy.jpg" alt="Dutch Food Culture" class="culture-title-img">
         
         <div class="culture-content">
             <div class="culture-features">

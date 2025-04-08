@@ -1,7 +1,7 @@
 <?php require_once 'parts/header.php'; ?>
 
 <div class="container">
-    <section class="hero">
+    <section class="title">
         <h1>Discover Dutch Gastronomy</h1>
         <p>Explore the rich culinary traditions of the Netherlands through its most iconic dishes</p>
     </section>

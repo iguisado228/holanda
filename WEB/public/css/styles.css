@@ -263,20 +263,20 @@ body {
     }
 }
 
-/* Hero Section */
-.hero {
+/* title Section */
+.title {
     padding: 60px 0;
     background-color: #fff;
     text-align: center;
 }
 
-.hero h1 {
+.title h1 {
     font-size: 42px;
     margin-bottom: 20px;
     color: #2C3E50;
 }
 
-.hero p {
+.title p {
     font-size: 18px;
     max-width: 800px;
     margin: 0 auto 30px;
@@ -424,7 +424,7 @@ body {
         align-items: center;
     }
     
-    .hero h1 {
+    .title h1 {
         font-size: 32px;
     }
     
@@ -442,11 +442,11 @@ body {
 }
 
 @media (max-width: 480px) {
-    .hero {
+    .title {
         padding: 40px 0;
     }
     
-    .hero h1 {
+    .title h1 {
         font-size: 26px;
     }
     
@@ -713,7 +713,7 @@ body {
     letter-spacing: 0.5px;
 }
 
-.culture-hero-img {
+.culture-title-img {
     width: 100%;
     max-height: 500px;
     object-fit: cover;
