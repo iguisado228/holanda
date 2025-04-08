@@ -1,11 +1,11 @@
-/* Reset básico */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilos generales */
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
@@ -20,7 +20,6 @@ body {
     padding: 0 20px;
 }
 
-/* Navbar - Estilo moderno */
 .navbar {
     background-color: #FF5733;
     padding: 15px 0;
@@ -35,11 +34,10 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 100%;
-    position: relative; /* Añade esto para el menú móvil */
+    position: relative; 
 }
 
-/* Menú hamburguesa para móvil */
-/* Mobile Menu Styles */
+/* burger menu */
 .menu-toggle {
     display: none;
     cursor: pointer;
@@ -152,14 +150,14 @@ body {
     color: white;
     text-decoration: none;
     display: flex;
-    align-items: center; /* Añadido para alineación vertical */
+    align-items: center; 
     height: 100%;
 }
 
 .nav-menu {
     display: flex;
     gap: 30px;
-    align-items: center; /* Añadido para alineación vertical */
+    align-items: center; 
     height: 100%;
 }
 
@@ -172,15 +170,15 @@ body {
     padding: 8px 12px;
     border-radius: 4px;
     display: flex;
-    align-items: center; /* Añadido para alineación vertical */
+    align-items: center; 
     height: 100%;
 }
 
-/* Dropdown Styles */
+/* Dropdown */
 .dropdown {
     position: relative;
-    display: inline-flex; /* Cambiado de inline-block a inline-flex */
-    align-items: center; /* Añadido para alineación vertical */
+    display: inline-flex; 
+    align-items: center; 
     height: 100%;
 }
 
@@ -194,7 +192,7 @@ body {
     background-color: rgba(255,255,255,0.2);
 }
 
-/* Dropdown Styles */
+/* Dropdown */
 .dropdown {
     position: relative;
     display: inline-block;
@@ -263,20 +261,19 @@ body {
     }
 }
 
-/* Hero Section */
-.hero {
+.title {
     padding: 60px 0;
     background-color: #fff;
     text-align: center;
 }
 
-.hero h1 {
+.title h1 {
     font-size: 42px;
     margin-bottom: 20px;
     color: #2C3E50;
 }
 
-.hero p {
+.title p {
     font-size: 18px;
     max-width: 800px;
     margin: 0 auto 30px;
@@ -411,7 +408,7 @@ body {
     color: #2C3E50;
 }
 
-/* Responsive Design */
+/* Responsive media */
 @media (max-width: 768px) {
     .navbar-container {
         flex-direction: column;
@@ -424,7 +421,7 @@ body {
         align-items: center;
     }
     
-    .hero h1 {
+    .title h1 {
         font-size: 32px;
     }
     
@@ -442,11 +439,11 @@ body {
 }
 
 @media (max-width: 480px) {
-    .hero {
+    .title {
         padding: 40px 0;
     }
     
-    .hero h1 {
+    .title h1 {
         font-size: 26px;
     }
     
@@ -468,7 +465,7 @@ body {
     }
 }
 
-/* Sección destacada Stroopwafel */
+
 .featured-stroopwafel {
     margin: 60px 0;
     padding: 40px;
@@ -507,8 +504,8 @@ body {
     border-radius: 12px;
     border: 5px solid white;
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-    margin: 20px auto; /* Cambiado a auto para centrar */
-    display: block; /* Necesario para que funcione margin auto */
+    margin: 20px auto; 
+    display: block; 
 }
 
 .btn-stroopwafel {
@@ -529,7 +526,7 @@ body {
     box-shadow: 0 5px 15px rgba(230,81,0,0.3);
 }
 
-/* Responsive para la sección stroopwafel */
+/* responsive design */
 @media (max-width: 768px) {
     .featured-stroopwafel {
         padding: 30px 20px;
@@ -549,12 +546,12 @@ body {
         max-width: 100%;
     }
 }
-/* Mobile Menu Toggle */
+
 .menu-toggle {
     display: none;
     cursor: pointer;
-    order: 1; /* Mueve la hamburguesa a la derecha */
-    margin-left: auto; /* Alinea a la derecha */
+    order: 1;
+    margin-left: auto; 
 }
 
 .menu-toggle span {
@@ -598,8 +595,8 @@ body {
         display: none;
         position: fixed;
         top: 70px;
-        right: 15px !important; /* Fuerza posición derecha */
-        left: auto !important; /* Anula cualquier posición izquierda */
+        right: 15px !important;
+        left: auto !important; 
         width: 180px;
         max-height: 80vh;
         background-color: #FF5733;
@@ -629,9 +626,7 @@ body {
         padding: 4px 8px;
         font-size: 12px;
     }
-    
-    /* Elimina cualquier altura fija que pudiera estar afectando */
-    .navbar-brand, .nav-menu, .dropdown > a {
+        .navbar-brand, .nav-menu, .dropdown > a {
         height: auto !important;
     }
 }
@@ -659,7 +654,7 @@ body {
     }
 }
 
-/* Culture Page Styles */
+/* Culture */
 .culture-container {
     max-width: 1200px;
     margin: 2rem auto;
@@ -713,7 +708,7 @@ body {
     letter-spacing: 0.5px;
 }
 
-.culture-hero-img {
+.culture-title-img {
     width: 100%;
     max-height: 500px;
     object-fit: cover;
@@ -888,7 +883,7 @@ body {
     width: 100%;
 }
 
-/* Restaurant Card Styles */
+/* Restaurant */
 .restaurant-card {
     display: flex;
     height: 250px;
@@ -952,7 +947,7 @@ body {
     align-self: flex-start;
 }
 
-/* Responsive Design */
+/* Responsive media */
 @media (max-width: 768px) {
     .restaurant-card {
         flex-direction: column;
