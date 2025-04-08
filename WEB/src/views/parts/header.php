@@ -39,6 +39,7 @@
                     </div>
                 </div>
                 <a href="../views/culture.php">Culture</a>
+                <a href="../views/restaurants.php">Restaurants</a>
             </div>
         </div>
     </nav>
